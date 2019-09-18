@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>KIUKIU-18, CSS</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* * {
+            color: red
+        } */
+        /* body {
+            background-color: blue;
+        } */
+        /* a, p {
+            color: green
+        } */
+        /* a[target="_self"] {
+            color: green
+        } */
+        a[href^="http"] {
+            color: green
+        }
+        a::after {
+            content: "CONTENT!!!"
+        }
+        a:hover {
+            background-color: red;
+        }
+        .cl1 {
+            background-color: blue;
+        }
+        #cl2 {
+            background-color: red;
+        }
+        p::first-letter {
+            font-size: 40px;
+        }
+    </style>
+</head>
+<!-- <body style="background-color: red"> -->
+<body>
+    <a href="#" target="_blank" style="background-color: green">Link</a>
+    <br>
+    <a href="http://cist.nure.ua/ias/app/tt/f?p=778:4:283128046184698::NO:::" style="background-color: grey">Link</a>
+    <br>
+    <a href="https://cist.nure.ua/ias/app/tt/f?p=778:4:283128046184698::NO:::" target="_self">Link</a>
+    <br>
+    <p class="cl1">
+        Lorem ipsum dolor sit amet.
+    </p>
+    <div class="cl1">
+        Lorem ipsum dolor sit amet.
+    </div>
+    <p id="cl2">
+        Lorem ipsum dolor sit amet.
+    </p>
+</body>
+</html>
